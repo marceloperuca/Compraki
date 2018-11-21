@@ -1,0 +1,75 @@
+.teste {
+    background: url(../img/azul.png) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: azure;
+    color: white;
+
+}
+
+.logo h3 {
+    width: 1000%;
+    margin-left: 10%;
+
+}
+
+
+nav {
+
+    font-weight: bold;
+    background-color: brown;
+
+
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    color: whitesmoke;
+
+    z-index: 2;
+}
+.admin{
+    margin-left: 70%;
+}
+
+.principal {
+
+
+    font-weight: bold;
+    background-color: brown;
+    border-radius: 5px;
+
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    color: white;
+    float: left;
+    margin-bottom: 150px;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+h3, .cadastro{
+    margin-left: 24%;
+    color: white;
+}
+.butao{
+   
+    background-color: whitesmoke;
+    border-color: darkgoldenrod;
+    
+    
+}
+.butao:hover{
+
+    background-color: white!important;
+    border-color: black!important;
+    color: black!important;
+    
+}
+
+

@@ -1,0 +1,51 @@
+
+/* 
+    Created on : 19/11/2018, 11:22:37
+    Author     : Marcelo
+*/
+
+.titulo{
+    text-align: center;
+    color: darkblue;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+}
+#tudo{
+  
+   background-color: rgba(226, 226, 226, 0.23)
+}
+.img-fluid{
+    border-radius: 5%;
+}
+#termos{
+    
+    margin-bottom: 3%;
+
+}
+
+
+
+#centro{
+    margin: 0 auto;
+}
+
+.btn-cancel{
+   background: gray!important;
+   color: white!important; 
+   margin-right: 20px
+}
+
+.btn-cancel:hover {
+    background-color: black!important;
+}
+
+#excluir_foto{
+    margin-bottom: 100px;
+}
+
+.btn-success {
+    background-color: #a7de508c!important;
+    border-color: #79b51a8c!important;
+    color: white!important;
+}

@@ -1,0 +1,175 @@
+nav {
+
+    font-weight: bold;
+    background-color: darkblue;
+
+
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    color: white;
+
+    z-index: 2;
+}
+h1{
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 0%;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+textarea.form-control {
+    height: auto;
+    margin-bottom: 2%;
+}
+
+#tudo {
+      background: url(../img/tiovader.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#resumoValor{
+    border-radius: 5px;
+}
+
+.paginaCarrinho table thead tr{
+    background: #2646a7!important;
+    color: white;
+}
+
+.paginaCarrinho #conteudoCarrinho{
+    margin-top: 3px;
+}
+
+.paginaCarrinho #paginaProdutos{
+    background-color: #4950574a!important;
+    margin-right: 40px;
+    color: white;
+    
+}
+.paginaCarrinho #paginaProdutos:hover{
+    background-color: white!important;
+    margin-right: 40px;
+    color: black!important;
+    
+}
+
+
+.paginaCarrinho #finalizar{
+    margin-right: 40px;
+    background-color: darkblue!important;
+    border-color: darkblue!important;
+    border: 1px solid green!important;
+}
+.paginaCarrinho #finalizar:hover{
+    background-color: white!important;
+    margin-right: 40px;
+    color: black!important;
+}
+
+#imaginary_container{
+    margin-top:20%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: black!important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.custom-control-label::before {
+    border: 1px solid black;  
+}
+
+#Pagamentotitulo label{
+    color: #2646a7;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.btn-success{
+    color: white!important;
+}
+
+#endereco {
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: 1px solid #2646a7;
+}
+
+#endereco h4{
+    margin-bottom: 30px;
+    text-align: center;
+    color:#2646a7;
+}
+#endereco p{
+    color:#2646a7;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+#endereco p label{
+    color:black;
+    font-weight: 400;
+}
+
+
+#formaPagamentoboleto i{
+    font-size: 30px;
+    color: #363432;
+}
+
+#formaPagamentoboleto p,
+#formaPagamentoboleto li{
+    color: #363432;
+}
+
+
+.desc { 
+    display: none; 
+}
+
+
+#compraFinalizada{
+    background: black;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#compraFinalizada .btn-sucess{
+   /*background: #85cc16cc!important;*/
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid darkblue;
+}
+
+
+.txt{
+    
+    font-size: 30px;
+    color: darkblue;
+    font-style: italic;
+}
+
+#resumoValor{
+    background-color: darkslategray;
+    color: white;
+    opacity: 0.8;   
+}

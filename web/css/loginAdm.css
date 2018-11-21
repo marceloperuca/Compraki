@@ -1,0 +1,86 @@
+.teste {
+    background: url(../img/LOGIN%20adm.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: white;
+    color: white;
+
+}
+
+.logo h3 {
+    width: 100%;
+    margin-left: 40%;
+
+}
+
+
+nav {
+
+    font-weight: bold;
+    background-color: firebrick;
+
+
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    color: white;
+
+    z-index: 2;
+}
+.admin{
+    margin-left: 70%;
+}
+
+.principal {
+
+
+    font-weight: bold;
+    background-color: darkred;
+    border-radius: 5px;
+
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    color: white;
+    float: left;
+    margin-bottom: 100px;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+}
+h3, .cadastro{
+    margin-left: 24%;
+    color: black;
+}
+    
+.butao{
+    margin-left: 72%;
+    background-color: black!important;
+    border-color: black!important;
+    
+}
+.butao:hover{
+
+    background-color: white!important;
+    border-color: black!important;
+    color: black!important;
+    
+}
+a{
+    margin-left: 4%;
+}
+
+a{
+    color: black!important;
+}
+a:hover{
+    text-decoration: none!important;
+    color: white!important;
+}
+
+

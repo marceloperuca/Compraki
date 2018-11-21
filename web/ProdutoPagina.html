@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Change Games</title>
+    <link rel="stylesheet" type="text/css" href="css/paginaProduto.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="teste">
+    <nav class="navbar navbar-expand-lg  border border-dar rounded shadow p-3 mb-5">
+        <div class="logo">
+            <h3>Change Games</h3>
+
+        </div>
+        <div class="admin">
+            <button class=" butao btn btn-secondary" onclick="window.location.href = ''">Mestre Jedi <i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                
+                    <img class="imagemProd" src="<% out.print(produto.getImagem()); %>">
+                    <figcaption> 
+                        <a href="<% out.print("Loja.jsp?id="+fornecedor.getId());%>" class="nomePet"> <!--<% out.print("PetShop: " + fornecedor.getNome()); %>--></a>
+                        <div class="estrelas">
+                            <label>
+                                <img name="fb" value="1" class="<% if(avaliacao >= 1)out.print("destaque");%>"/>
+                            </label>
+                            <label>
+                                <img name="fb" value="2" class="<% if(avaliacao >= 2)out.print("destaque");%>"/>
+                            </label>
+                            <label>
+                                <img name="fb" value="3"  class="<% if(avaliacao >= 3)out.print("destaque");%>"/>
+                            </label>
+                            <label>
+                                <img name="fb" value="4"  class="<% if(avaliacao >= 4)out.print("destaque");%>"/>
+                            </label>
+                            <label>
+                                <img name="fb" value="5" class="<% if(avaliacao == 5)out.print("destaque"); else out.print("disabled");%>"/>
+                            </label>
+                        </div>  
+                    </figcaption>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h2 name="nomeProduto" id="paginaP">
+                        <!--<%
+                        if (nivel == 1) {
+                            out.print(produto.getNome());
+                        } else {
+                            out.print(alimento.getNome());
+                        } %> -->
+                    </h2>
+
+                    <h4 id="valorProduto">R$
+                        <!--<spam for="nome" class="label" id="pegaValorProd" 
+                                                  text= " <%
+                                                      if (nivel == 1) {
+                                                          out.print(df.format(produto.getPreco()));
+                                                      } else {
+                                                          out.print(df.format(alimento.getPreco()));
+                            } %>" value="valorProd">
+                            <%
+                                if (nivel == 1) {
+                                    out.print(df.format(produto.getPreco()));
+                                } else {
+                                    out.print(df.format(alimento.getPreco()));
+                            } %>
+                        </spam>-->
+                    </h4>
+
+                    <div class="botao">
+                        <form method="post" action="../AddProdutoCarrinhoServlet" id="formAddCarrinho">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <button type="button" id="btnFormaPagamento" class="btn btn-primary btnF">Formas de Pagamento</button>
+
+                                    <div class="formapagamentoDiv">
+                                        <h3 class="OpcP">Opções de parcelamento</h3>
+                                        <ul name="qtdParcelas" value id="qtdParcelas">
+                                        </ul>
+                                        <br>
+                                        <label>Parcelas de 4x a partir de 100,00 reais e parcelas de 12x a partir de 300,00 reais!</label>
+                                    </div>
+                                </div>
+
+                                <div class="adicionarCar col-xs-12 col-sm-6 col-md-6">
+                                    <button type="submit" id="btnAddCart" class="btn btn-primary">Adicionar ao Carrinho</button>
+
+                                    <!-- <%
+                                        out.print("<input type=\"hidden\" name=\"nivel\" id=\"nivel\" value=\"" + nivel + "\"/>");
+
+                                        if (nivel == 1) {
+                                            out.print("<input type=\"hidden\" name=\"idProduto\" id=\"idProduto\" value=\"" + produto.getId() + "\"/>");
+                                        } else {
+                                            out.print("<input type=\"hidden\" name=\"idProduto\" id=\"idProduto\" value=\"" + alimento.getId() + "\"/>");
+                                        }
+                                    %>-->
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <div data-spy="scroll" id="txtcaracteristica" class="scrollspy-example">
+                        <h6> CARACTERISTICA DO PRODUTO </h6>
+                        <p value="txtcaracter">Andre aqui vai as caracteristicas</p>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+           
+                    <hr>
+
+                    <h1 id="paginaP">Produtos Semelhantes</h1>
+
+
+                    <div class="col-xs-10 col-sm-10 col-md-10">
+                <div class="row">
+                  <!--   <%
+                        List<Produto> lista = new ArrayList();
+                        ProdutoDAO.getProdutos(lista, fornecedor.getId());
+                        for (int contador = 0; contador < lista.size(); contador++) {
+                            out.print("<div class='col-sm-12 col-md-3'>");
+                            out.print("<div class='product-image-wrapper'>");
+                            out.print("<div class='single-products'>");
+                            out.print("<div class='productinfo text-center'>");
+                            out.print("<img src='" + produto.getImagem() + "' width='200px' height='200px' >");
+                            out.print("<hr>");
+                            produto = lista.get(contador);
+                            out.print("<h3>R$" + df.format(produto.getPreco()) + "</h3>");
+
+                            produto = lista.get(contador);
+                            out.print("<p>" + produto.getNome() + "</p>");
+
+                            produto = lista.get(contador);
+                            out.print("<a href='../Controle?id=" + produto.getId() + "&action=comprar' <i 'id='comprar" + contador
+                                    + "' class='fas fa-shopping-cart' style='font-size:22px; color:#39b54a;'></i></a>");
+                            out.print("</div>");
+                            out.print("</div>");
+                            out.print("</div>");
+                            out.print("</div>");
+                        }
+                    %>-->
+                </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+</body>      
+</html>

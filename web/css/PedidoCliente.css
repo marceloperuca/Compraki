@@ -1,0 +1,157 @@
+
+/* 
+    Created on : 19/11/2018, 11:25:43
+    Author     : Marcelo
+*/
+
+#tudo {
+   background-color: rgba(226, 226, 226, 0.23);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card-header {
+    background-color: #2646a7!important;
+    border-color: #071f69!important;
+}
+
+#fotopet {
+    float: left;
+}
+
+#inputqtd{
+    float: left;
+}
+
+.card-body {
+    width: 450px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+#fotoprod{
+    float: left;
+}
+
+#logocentral{
+    padding-top: 2%;
+}
+
+.principal {
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0.6;
+    color: black;
+    float: left;
+    margin-bottom: 15px;
+    
+}
+.principal2 {
+    /*margin-left: 100px;*/
+    /*margin-top: 70px;
+padding: 5px 5px 5px 10px;*/
+    padding-left: 8%;
+    font-weight: bold;
+    /* background-color: #EDDEA4; */
+    /* border: 1px solid#EDDEA4; */
+    border-radius: 5px;
+    
+    color: black;
+    float: left;
+    height: 100px;
+    color: darkblue;
+    margin-top: 3%  
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #030306!important;
+    border-color: #1e7e34;
+}
+
+ /*-----------PARETE FIXA FIM-----------*/
+ 
+ 
+ h1{
+    text-align: center;
+}li {
+    list-style: none;
+    margin-left: 0%;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+#logocentral{
+    padding-top: 2%;
+}
+
+.filtro-meus-produto h2{
+    width:50%;
+    display:block;
+    float: left; 
+}
+
+#tabela_busca_meus_produtos i{
+    font-size: 25px;
+}
+
+.fa-trash-alt:hover{
+    color:#e60f0f;
+}
+
+.fa-edit:hover{
+    color:#c1c12a;;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #2646a7!important;
+    border-color: #32383e;
+}
+
+
+/*CSS DATA TABLE - INICIO*/
+table.dataTable thead .sorting {
+    background-image: none!important;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: none!important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 8px;
+}
+
+button, input, optgroup, select, textarea {
+    border-radius: 5px;
+}
+
+
+
+
+
+/*CSS DATA TABLE - FIM*/
+h5{
+    color: darkblue;
+}
+
+.linha-vertical {
+ border-left: 1px solid grey;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+ box-sizing: border-box;
+ margin-left: 10%;
+}
+.box {
+
+
+ height: 250px;/*Altura da linha*/
+}
+.btn-success{
+  
+    margin-left: 2%;
+}
+
+tbody{
+    background-color: white;
+}
