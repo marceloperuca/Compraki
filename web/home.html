@@ -1,60 +1,51 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <meta charset="UTF-8">  
-        <title>Homecompraki</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
+        <meta charset="UTF-8">
+        <title>Compraki | Home</title>
+        <link rel="stylesheet" type="text/css" href="css/PaginadeProduto.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="js/produto_card.js" type="text/javascript"></script>
+    </head>
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<body class="teste">
-    
-    <nav class="navbar navbar-expand-lg  border border-dar rounded shadow p-3 mb-5">
-        <div class="logo">
-            <h3 >CompraKi</h3>
-           
-        </div>
-       
-    </nav>
-   <div class="container" >
-
+    <body class="teste">
+        <header>
             <div class="row">
-               <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class=" text-center col-sm-2 logo"></div>
+                <div class="col-4">
+                    <div class="input-group busca">
+                        <input type="text" class="form-control" placeholder="Buscar por..." id="txtPesquisa">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="btnPesquisa"><span class="fa fa-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </header>
+        <div class="container fill">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 teste" src="img/c1.jpg" alt="First slide">
-                                <div class="carousel-caption ">
-                             
-                                </div>
+                                <img class="carousel-img" src="img/black.png" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 teste" src="img/c2.jpg" alt="Second slide">
-                                <div class="carousel-caption ">
-                                  
-                                </div>
+                                <img class="carousel-img" src="img/teste2.png" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 teste" src="img/c3.jpg" alt="Third slide">
-                                <div class="carousel-caption ">
-                                 
-                                </div>
+                                <img class="carousel-img" src="img/c3.jpg" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 teste" src="img/c4.jpg" alt="Four slide">
-                                <div class="carousel-caption ">
-                                    
-                                </div>
+                                <img class="carousel-img" src="img/c4.jpg" alt="Four slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 teste" src="img/c5.jpg" alt="Five slide">
-                                <div class="carousel-caption ">
-                                   
-
-                                </div>
+                                <img class="carousel-img" src="img/c5.jpg" alt="Five slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -62,27 +53,78 @@
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>                 
-                </div> 
+                    </div>
+                </div>
             </div>
-           
-          
         </div>
-     
 
-
-
-        <div class="row"> 
-            
-               
-        </div>   
-
-
-
-  
-
-</body>      
+        <div class="container" id="paginaProdutos">
+            <div class="row">
+                <div id="divPesquisa" class="col-sm-6">
+                    <h2>Ofertas em Destaque</h2>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-2">
+                    <div  class="sidebar">
+                        <h4>Categorias </h4>
+                        <br>
+                        <div>
+                            <input type="checkbox" name="fb" value="playstation" />
+                            <label for="scales">Playstation 4 </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="xbox" />
+                            <label for="scales">XBox one</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="nitendo" />
+                            <label for="scales">Nitendo Switch</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="pc" />
+                            <label for="scales">PC Gamers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="notbooks" />
+                            <label for="scales">NotBooks gamers </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="placas" />
+                            <label for="scales">Placas de video</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="memorias" />
+                            <label for="scales">Memorias</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="gabinetes" />
+                            <label for="scales">Gabinetes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="celular" />
+                            <label for="scales">Smartphones</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fb" value="tv" />
+                            <label for="scales">Televisores 4k</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="container_cards"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <p>2018&copy;- Curso de Análise e Desenvolvimento de Sistemas</p>
+            </div>
+        </footer>
+    </body>      
 </html>
